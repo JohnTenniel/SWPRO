@@ -1,0 +1,15 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block content %}
+<div class="one">
+<div class="containgallery">
+	{% for img in g_imagine %}
+						<article class="photobase">
+							<a href="{{ img.image.url }}" class="image"><img src="{{ img.image.url }}" alt="" /></a>
+							<h2>{{ img.title }}</h2>
+							<p>{{ img.description }}</p>
+						</article>
+	{% endfor %}
+					</div>
+</div>
+{% endblock %}

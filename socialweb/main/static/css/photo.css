@@ -1,0 +1,11 @@
+.containgallery {
+ display: grid;
+ grid-template-columns: repeat(4, 1fr);
+ grid-column-gap: 10px;
+ grid-row-gap: 10px;
+ }
+
+ .photobase {
+ background-color: lightgrey;
+ padding: 10px;
+ }
