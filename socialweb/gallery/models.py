@@ -13,7 +13,7 @@ class Gallery(models.Model):
     vote_ratio = models.IntegerField(default=0, blank=True)
     created = models.DateTimeField(auto_now_add=True)
     autor = models.ForeignKey(User, on_delete=models.CASCADE, null=True)
-    album = models.ManyToManyField('Album', blank=True)
+    album = models.ManyToManyField('Album', blank=True, related_name='album')
 
     def __str__(self):
         return self.title
